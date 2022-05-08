@@ -9,4 +9,8 @@ describe("Pruebas para StudentsService", ()=>{
         const studentsEmails = ExplorerService.getAllEmails();
         expect(studentsEmails.length).toBe(29)
     })
+    test("3. Obteniendo todos los estudiantes donde sus créditos son mayor a 500",()=>{
+        const studentsBycredits = ExplorerService.getStudentsFilterByCredits();
+        expect(studentsBycredits.length).toBe(27)
+    })
 })
